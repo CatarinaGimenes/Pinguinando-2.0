@@ -6,8 +6,9 @@
     <link rel="icon" href="Fotos/Happy_emoticon.webp">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="PaginaInicialCADRJITSU.css">
+    <link rel="stylesheet" href="pagInicialCARDJITSU.css">
     <script src="mapa.js"></script>
+    <script src="cadastro.js"></script>
     <title>Card-Jitsu</title>
 </head>
 
@@ -38,10 +39,16 @@
             <div onclick="abrirMapa()" class="mapa">
                 <div class="mapinha"></div>
             </div>
+            <div onclick="abrirtelefone()" class="telefone">
+                <div class="telefoninho"></div>
+            </div>
+            <div id="EXIBIRTOAST"></div>
+            <div id="blogCelular"></div>
+            <div id="blogLogin"></div>
+            <div id="msg_erro"></div>
             <div id="blogId"></div>
             <div id="msg_erro"></div>
     </section>
-    <audio id="backgroundMusic" src="audios/Card-Jitsu Shadow ｜ Club Penguin OST.mp3" autoplay loop muted ></audio>
 </body>
 
 </html>
@@ -92,10 +99,8 @@
             </div>
             `
         } else {
-                window.location.href = "DASHBOARD.html"
-            }
+            window.location.href = "DASHBOARD.html"
         }
+    }
 
 </script>
-
-<script src="sons.js"></script>
