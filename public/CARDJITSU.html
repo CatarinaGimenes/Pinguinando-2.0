@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="Fotos/Happy_emoticon.webp">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CARDJITSU.css">
+    <title>Jogar- Card Jitsu</title>
+</head>
+
+<body>
+    <section class="pagina-inteira">
+        <div id="fundo">
+            <img id="pinguim1" src="Fotos/pinguinpreto.png">
+            <img id="pinguim2" src="Fotos/sensei.png">
+
+            <div class="cartas-contagem-estatica"></div>
+            <div class="numero_estatico" id="numero_estatico">0</div>
+            <div class="cartas-contagem-estatica2"></div>
+            <div class="numero_estatico2" id="numero_estatico2">0</div>
+
+            <div id="cartas">
+
+                <div class="cards" id="carta1" onclick="lancar1()" style="transform: translate(-90px, 5px);"></div>
+
+                <div class="cards" id="carta2" onclick="lancar2()" style="transform: translate(45px, 5px);"></div>
+
+                <div class="cards" id="carta3" onclick="lancar3()" style="transform: translate(180px, 5px);"></div>
+
+                <div class="cards" id="carta4" onclick="lancar4()" style="transform: translate(315px, 5px);"></div>
+
+                <div class="cards" id="carta5" onclick="lancar5()" style="transform: translate(450px, 5px);"></div>
+
+
+                <div class="cards-sensei" id="carta1-sensei" style="transform: translate(-485px, -35px);">
+                    <div class="frente"></div>
+                    <div id="tras1"></div>
+                </div>
+                <div class="cards-sensei" id="carta2-sensei" style="transform: translate(-430px, -35px);">
+                    <div class="frente"></div>
+                    <div id="tras2"></div>
+                </div>
+                <div class="cards-sensei" id="carta3-sensei" style="transform: translate(-375px, -35px);">
+                    <div class="frente"></div>
+                    <div id="tras3"></div>
+                </div>
+                <div class="cards-sensei" id="carta4-sensei" style="transform: translate(-320px, -35px);">
+                    <div class="frente"></div>
+                    <div id="tras4"></div>
+                </div>
+                <div class="cards-sensei" id="carta5-sensei" style="transform: translate(-265px, -35px);">
+                    <div class="frente"></div>
+                    <div id="tras5"></div>
+                </div>
+
+            </div>
+            <div id="div_comojogar"></div>
+            <img onclick="sair()" id="X" src="Fotos/X-cardjitsu.png">
+            <img onclick="perguntar()" id="pergunta" src="Fotos/pergunta-cardjitsu.png">
+        </div>
+    </section>
+    <div id="EXIBIRTOAST"></div>
+    <audio id="backgroundMusic" src="audios/Mountain Dojo - Dojo ｜ Club Penguin OST.mp3" autoplay loop muted ></audio>
+</body>
+
+</html>
+<script src="CARDJITSU.js"></script>
+<script src="roupasescondidas.js"></script>
+
+<script>
+    function jogardnovo() {
+        window.location.href = "CARDJITSU.html"
+    }
+
+    function sair() {
+        window.location.href = "PaginaInicialCADRJITSU.html"
+    }
+
+    function redirecionarDASHBOARD() {
+        window.location.href = "DASHBOARD.html"
+    }
+
+    function perguntar() {
+        div_comojogar.innerHTML = `
+            <div id="img_comojogar">
+            <p onclick="fechar()">Sair</p>
+            </div>`
+    }
+
+    function fechar() {
+        div_comojogar.innerHTML = ""
+    }
+</script>
+
+<script src="sons.js"></script>

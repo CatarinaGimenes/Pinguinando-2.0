@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="Fotos/Happy_emoticon.webp">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="mapa.js"></script>
+    <script src="mapaPersonagens.js"></script>
+    <script src="cadastro.js"></script>
+    <title>Shadow Guy</title>
+</head>
+
+<body>
+    <section class="blog">
+        <div class="elementos-principais">
+            <img class="aba-pinguim" src="Fotos/Mascots.png" alt="">
+            <div class="corpo">
+                <div class="topo-corpo">
+                    <div>
+                        <img id="logo" src="Fotos/LOGO.png" alt="">
+                    </div>
+                    <div class="titulo">
+                        <h2>Pinguinando</h2>
+                    </div>
+                </div>
+                <div class="subtitulo">
+                    <h2>Personagens</h2>
+                </div>
+                <div class="infos">
+                    <div id="rock">
+                        <img style="width: 400px;" src="Fotos/Shadow_Guy.webp">
+                        <div id="infos-personagens">
+                            <h2 class="titulo-personagem">Shadow Guy</h2>
+                            <p class="texto">
+                                Após ser eletrocutado pela <span class="itemescondido" onclick="darcombo()">torradeira 3000</span>
+                                (Uma invenção de Gary), Sam conquistou seus poderes de ondas de sombra. Gary o ajudou a
+                                aprender a usar seus poderes até o dia em que ele os usou para derrotar uma massa
+                                mutante de pizza, quando ele foi chamado de “Cara das Sombras” no jornal, daí surgiu o
+                                apelido Shadow Guy. Mais tarde, ele encontrou Gamma Gal ao tentar derrotar um monstro
+                                marinho.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="penguinpicture"></div>
+        <div onclick="abrirMapa()" class="mapa">
+            <div class="mapinha"></div>
+        </div>
+        <img onclick="voltar()" class="seta" src="Fotos/SETAamarela.png">
+        <div id="blogId"></div>
+        <div onclick="abrirtelefone()" class="telefone">
+            <div class="telefoninho"></div>
+        </div>
+        <div id="blogCelular"></div>
+        <div id="blogLogin"></div>
+        <div id="msg_erro"></div>
+    </section>
+    <div id="EXIBIRTOAST"></div>
+    <audio id="backgroundMusic" src="audios/King of Kingston - Coffee Shop ｜ Club Penguin OST.mp3" autoplay loop
+        muted></audio>
+</body>
+
+</html>
+
+<script src="sons.js"></script>
+
+<script>
+    function darcombo() {
+        encontrar(701)
+        encontrar(235)
+        encontrar(144)
+    }
+</script>
+
+<script src="roupasescondidas.js"></script>

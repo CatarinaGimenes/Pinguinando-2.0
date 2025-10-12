@@ -1,0 +1,167 @@
+@font-face {
+    font-family: ACME;
+    src: url(Fontes/ClubPenguinFonts/A.C.M.E.\ Secret\ Agent\ Bold.ttf);
+}
+
+body {
+    background-color: #33aaff;
+    background-color: #54575a;
+    background-image: url(Fotos/Water_Dojo.webp);
+    background-size: cover;
+    margin: 0;
+}
+
+div {
+    margin: 0;
+}
+
+.pagina-inteira {
+    justify-content: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.elementos-principais {
+    display: flex;
+    flex-direction: column;
+}
+
+.corpo {
+    width: 1200px;
+    height: 700px;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#logo-card {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+#botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#btn_jogar {
+    font-family: ACME;
+    font-size: 25px;
+    height: 90px;
+    width: 250px;
+    border-radius: 15px;
+    border: 4px outset #b8ac86;
+    color: #888064;
+    background-color: #dfd3ac;
+}
+
+#btn_jogar:hover {
+    scale: 0.965;
+    cursor: pointer;
+}
+
+#btn_dashboard {
+    font-family: ACME;
+    font-size: 18px;
+    height: 35px;
+    width: 200px;
+    border-radius: 10px;
+    border: 4px outset #b8ac86;
+    color: #888064;
+    background-color: #dfd3ac;
+}
+
+#btn_dashboard:hover {
+    scale: 0.965;
+    cursor: pointer;
+}
+
+#esquerda {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#centro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+#direita {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.selos {
+    margin-top: 20px;
+    width: 200px;
+}
+
+.telainteira {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #27282951;
+}
+
+#mensagem {
+    width: 525px;
+    height: 375px;
+    background-color: #ff6600;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#mensagem button {
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: 250px;
+    height: 80px;
+    background-color: #ff6600;
+    border: 3.5px solid #983901;
+    border-radius: 25px;
+    box-shadow: #ffc700 2px 2px 3px 1px, #ffc700 2px 1.3px 3px 0px inset;
+}
+
+#mensagem button:hover {
+    scale: 0.970;
+    cursor: pointer;
+}
+
+#mensagem h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+    text-align: center;
+    line-height: 30px;
+    max-width: 400px;
+    margin: 0;
+}
+
+/* BOX SHADOW - MENSAGEM */
+#mensagem {
+    border: 3.5px solid #983901;
+    box-shadow: #ffffff 0px 0px 2px 2px, #85a6bc 0px 0px 2px 4.5px, #ffc700 3px 3px 2px 0px inset;
+}

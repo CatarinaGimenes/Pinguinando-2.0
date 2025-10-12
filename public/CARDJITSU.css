@@ -1,0 +1,491 @@
+@font-face {
+    font-family: BurbankBig;
+    src: url("Fontes/BurbankBigCondensed/burbankbigcondensed_bold.ttf");
+}
+
+@font-face {
+    font-family: ACME;
+    src: url(Fontes/ClubPenguinFonts/A.C.M.E.\ Secret\ Agent\ Bold.ttf);
+}
+
+p {
+    margin: 0;
+}
+
+body {
+    background-color: #33aaff;
+    background-color: gray;
+}
+
+body {
+    margin: 0;
+}
+
+.pagina-inteira {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fundo {
+    width: 1170px;
+    height: 738px;
+    background-image: url(Fotos/Fundo-Dojo.png);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+#X {
+    position: absolute;
+    top: 19px;
+    right: 16px;
+    width: 38px;
+}
+
+#X:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+#pergunta {
+    position: absolute;
+    top: 16px;
+    right: 222px;
+    width: 730px;
+}
+
+#pergunta:hover {
+    scale: 1.01;
+    cursor: pointer;
+}
+
+#cartas {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 149px;
+    width: 1032px;
+    /*background-color: rgba(128, 0, 128, 0.568);*/
+    bottom: 20px;
+    left: 70px;
+}
+
+.cards {
+    height: 140px;
+    width: 135px;
+    position: absolute;
+}
+
+.cards:hover {
+    cursor: pointer;
+}
+
+.cards-after {
+    animation-name: slide-top;
+    animation-duration: 5s;
+}
+
+@keyframes slide-top {
+
+    35% {
+        transform: translate(270px, -350px) scale(1.6);
+    }
+
+    100% {
+        transform: translate(270px, -350px) scale(1.6);
+    }
+}
+
+.num {
+    font-family: BurbankBig;
+    font-size: 25px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 40px;
+    left: 18px;
+}
+
+.FIRECARD {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(Fotos/Cartas/Conjunto-1/FOGO-puffle.png);
+}
+
+.WATERCARD {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(Fotos/Cartas/Conjunto-1/AGUA-waterslide.png);
+}
+
+.ICECARD {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(Fotos/Cartas/Conjunto-1/NEVE-squidzoid.png);
+}
+
+.cards-sensei {
+    position: absolute;
+    height: 60px;
+    width: 50px;
+}
+
+.frente {
+    position: absolute;
+    background-image: url(Fotos/Card-Jitsu_card_back.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+
+    backface-visibility: hidden;
+}
+
+.cards-sensei-after {
+    animation-name: slide-left-top;
+    animation-duration: 5s;
+
+    transform-style: preserve-3d;
+    transition: 1.5s;
+}
+
+@keyframes slide-left-top {
+    35% {
+        transform: translate(-270px, -350px) scale(3.7);
+    }
+
+    60% {
+        transform: translate(-270px, -350px) scale(3.7) rotateY(180deg);
+    }
+
+    100% {
+        transform: translate(-270px, -350px) scale(3.7) rotateY(180deg);
+    }
+}
+
+#tras1 {
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+#tras2 {
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+#tras3 {
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+#tras4 {
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+#tras5 {
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.water {
+    position: absolute;
+    background-image: url(Fotos/Cartas/Conjunto-1/MACHINE-Agua-sensei.png);
+    background-size: cover;
+    height: 100%;
+    width: 115%;
+
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.ice {
+    position: absolute;
+    background-image: url(Fotos/Cartas/Conjunto-1/MACHINE-Neve-herbert.png);
+    background-size: cover;
+    height: 100%;
+    width: 115%;
+
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.fire {
+    position: absolute;
+    background-image: url(Fotos/Cartas/Conjunto-1/MACHINE-Fogo-dragao.png);
+    background-size: cover;
+    height: 100%;
+    width: 115%;
+
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.numM {
+    font-family: BurbankBig;
+    font-size: 11px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 17px;
+    left: 2px;
+}
+
+.cartas-contagem-estatica {
+    width: 80px;
+    height: 80px;
+    background-image: url("Fotos/Starter_Deck.webp");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    transform: translate(450px, -640px);
+}
+
+.numero_estatico {
+    font-family: ACME;
+    font-size: 30px;
+    position: absolute;
+    transform: translate(505px, -655px);
+}
+
+.cartas-contagem-estatica2 {
+    width: 80px;
+    height: 80px;
+    background-image: url("Fotos/Starter_Deck.webp");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    transform: translate(-520px, -640px);
+}
+
+.numero_estatico2 {
+    font-family: ACME;
+    font-size: 30px;
+    position: absolute;
+    transform: translate(-465px, -655px);
+}
+
+.cartas-contagem {
+    width: 80px;
+    height: 80px;
+    background-image: url("Fotos/Starter_Deck.webp");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    transform: translate(0px, -400px);
+    animation-name: win-animation;
+    animation-duration: 4s;
+}
+
+.cartas-contagem-negativo {
+    width: 80px;
+    height: 80px;
+    background-image: url("Fotos/Starter_Deck.webp");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    transform: translate(0px, -400px);
+    animation-name: lost-animation;
+    animation-duration: 4s;
+}
+
+@keyframes win-animation {
+    0% {
+        transform: translate(0px, -400px) rotateY(-180deg);
+    }
+    35% {
+        transform: translate(0px, -400px) scale(2.5) rotateY(-180deg);
+    }
+
+    70% {
+        transform: translate(450px, -640px) rotateY(0deg);
+    }
+
+    100% {
+        transform: translate(450px, -640px) rotateY(0deg);
+    }
+}
+
+@keyframes lost-animation {
+    0% {
+        transform: translate(0px, -400px) rotateY(-180deg);
+    }
+    35% {
+        transform: translate(0px, -400px) scale(2.5) rotateY(-180deg);
+    }
+
+    70% {
+        transform: translate(-520px, -640px) rotateY(0deg);
+    }
+
+    100% {
+        transform: translate(-520px, -640px) rotateY(0deg);
+    }
+}
+
+#fundo2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#finalizar {
+    position: fixed;
+    width: 600px;
+    height: 400px;
+    background-color: #0053b0;
+    border-radius: 35px;
+    border: 3px solid rgb(192, 192, 192);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -53px 55px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: BurbankBig;
+    font-size: 45px;
+    color: white;
+    gap: 10px;
+    align-self: center;
+}
+
+#finalizar img {
+    width: 30px;
+}
+
+#finalizar p {
+    margin-top: 5px;
+}
+
+#moedinhas {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+#txt_moedas {
+    font-size: 25px;
+    margin: 0;
+}
+
+.botao {
+    font-family: ACME;
+    color: white;
+    font-size: 12px;
+    background-color: #025eb8;
+    border-color: #0053b0;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -16px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+#btn_jogar {
+    height: 80px;
+    width: 170px;
+}
+
+#btn_jogar:hover {
+    cursor: pointer;
+    scale: 1.05;
+}
+
+#btn_dash {
+    height: 35px;
+    width: 140px;
+}
+
+#btn_dash:hover {
+    cursor: pointer;
+    scale: 1.05;
+}
+
+#btn_sair {
+    height: 35px;
+    width: 60px;
+}
+
+#btn_sair:hover {
+    scale: 1.05;
+    cursor: pointer;
+}
+
+#div_comojogar {
+    position: fixed;
+    width: 800px;
+    height: 437.61px;
+    align-self: center;
+}
+
+#img_comojogar {
+    width: 100%;
+    height: 100%;
+    background-image: url(Fotos/como-jogar.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#img_comojogar p {
+    position: absolute;
+    font-family: ACME;
+    bottom: 35px;
+    right: 40px;
+}
+
+#img_comojogar p:hover {
+    color: rgb(180, 180, 180);
+    cursor: pointer;
+}
+
+#pinguim1 {
+    position: absolute;
+    height: 290px;
+    top: 230px;
+    right: 225px;
+}
+
+#pinguim2 {
+    position: absolute;
+    height: 290px;
+    top: 230px;
+    left: 225px;
+}
+
+#TOAST {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    width: 265px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.92);
+    border: 4px solid #30beec;
+    border-radius: 20px;
+}
+
+#TOAST img {
+    width: 80px;
+}
+
+#TOAST h4 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}

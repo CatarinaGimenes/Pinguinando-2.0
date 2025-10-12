@@ -1,0 +1,380 @@
+@font-face {
+    font-family: BurbankBig;
+    src: url(Fontes/BurbankBigCondensed/burbankbigcondensed_bold.ttf);
+}
+
+@font-face {
+    font-family: ACME;
+    src: url(Fontes/ClubPenguinFonts/Action\ Man\ Italic.ttf);
+}
+
+body {
+    background-color: #b4ab8b;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+h4 {
+    margin: 0;
+}
+
+.dash {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.elementos-todos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.topo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    font-family: BurbankBig;
+    font-size: 50px;
+    gap: 80px;
+    color: #6f6557;
+    color: #a16e15;
+}
+
+.topo h2 {
+    margin-bottom: 4px;
+}
+
+.aba-pinguim {
+    height: 100px;
+    transform: scaleX(-1);
+}
+
+.corpo {
+    width: 1050px;
+    height: 625px;
+    background-color: #f6f1d7;
+    border-radius: 20px;
+}
+
+.topo-corpo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35%;
+}
+
+#caixa_progressao {
+    width: 1000px;
+    height: 180px;
+    border-radius: 25px;
+    background-color: #f4ebdf;
+    border: 4px solid #d7d0be;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#caixa_progressao img {
+    width: 110px;
+}
+
+#caixa_progressao h4 {
+    font-family: ACME;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #6f6557;
+}
+
+#caixa_progressao h2 {
+    font-family: BurbankBig;
+    margin-top: 5px;
+    font-size: 100px;
+    color: #2b2a2a;
+}
+
+.faixas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#prox_faixa:hover {
+    scale: 1.05;
+    cursor: pointer;
+}
+
+#BARRA {
+    height: 55px;
+    width: 700px;
+    background-color: #6f6557;
+    border-radius: 50px;
+    border: 4px solid #97928b;
+    display: flex;
+    align-items: center;
+}
+
+#barra_XP {
+    max-width: 690px;
+    min-width: 150px;
+    height: 45px;
+    border-radius: 25px;
+    background-color: #fdb732;
+    margin-left: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -35px 36px -28px inset;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#barra_XP h2 {
+    font-family: BurbankBig;
+    font-size: 30px;
+    margin-right: 10px;
+    color: #5b5449;
+}
+
+.resto-corpo {
+    display: flex;
+    height: 65%;
+    justify-content: space-around;
+}
+
+#graf-pizza {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 330px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#graf-pizza h2 {
+    font-family: BurbankBig;
+    font-size: 30px;
+    text-align: center;
+    color: #a16e15;
+}
+
+#direita {
+    display: flex;
+    gap: 10px;
+}
+
+#KPIs {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.KPI {
+    height: 125px;
+    width: 225px;
+    border-radius: 25px;
+    background-color: #dfd3ac;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.KPI h2 {
+    font-family: BurbankBig;
+    font-size: 27px;
+    text-align: center;
+    color: #a16e15;
+    margin: 3px;
+}
+
+.KPI h1 {
+    font-family: BurbankBig;
+    font-size: 40px;
+    color: #a16e15;
+}
+
+#ultimas-partidas {
+    height: 385px;
+    width: 385px;
+    border-radius: 25px;
+    background-color: #dfd3ac;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#alerts {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#ultimas-partidas h2 {
+    font-family: BurbankBig;
+    font-size: 30px;
+    text-align: center;
+    color: #a16e15;
+}
+
+#ultimas-partidas h4 {
+    margin: 0;
+    font-family: BurbankBig;
+    font-size: 18px;
+    color: #a16e15;
+    align-self: flex-start;
+    margin-left: 20px;
+}
+
+.alerta {
+    height: 35px;
+    width: 330px;
+    background-color: #f4ebdf;
+    border: 4px solid #d7d0be;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.alerta img {
+    height: 85%;
+    margin-left: 5px;
+}
+
+.alerta h5 {
+    margin: 0;
+    margin-top: 5px;
+    font-family: BurbankBig;
+    font-size: 30px;
+    color: #5b5449;
+}
+
+.alerta h3 {
+    font-family: BurbankBig;
+    color: #5b5449;
+    font-size: 18px;
+    align-self: flex-start;
+    margin-right: 15px;
+}
+
+.seta {
+    rotate: -90deg;
+    width: 80px;
+    position: fixed;
+    top: 15px;
+    left: 20px;
+}
+
+.seta:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+#faixapreta {
+    display: flex;
+    gap: 20px;
+}
+
+#telatoda {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b2a2a69;
+}
+
+#tabla {
+    background-image: url("Fotos/tabelasFAIXA.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 400px;
+    height: 635px;
+    position: relative;
+}
+
+#ex {
+    position: absolute;
+    width: 40px;
+    top: 11px;
+    left: 343px;
+}
+
+#ex:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.telainteira {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #27282951;
+}
+
+#mensagem {
+    width: 525px;
+    height: 375px;
+    background-color: #ff6600;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#mensagem button {
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: 250px;
+    height: 80px;
+    background-color: #ff6600;
+    border: 3.5px solid #983901;
+    border-radius: 25px;
+    box-shadow: #ffc700 2px 2px 3px 1px, #ffc700 2px 1.3px 3px 0px inset;
+}
+
+#mensagem button:hover {
+    scale: 0.970;
+    cursor: pointer;
+}
+
+#mensagem h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+    text-align: center;
+    line-height: 30px;
+    max-width: 400px;
+    margin: 0;
+}
+
+/* BOX SHADOW - MENSAGEM */
+#mensagem {
+    border: 3.5px solid #983901;
+    box-shadow: #ffffff 0px 0px 2px 2px, #85a6bc 0px 0px 2px 4.5px, #ffc700 3px 3px 2px 0px inset;
+}

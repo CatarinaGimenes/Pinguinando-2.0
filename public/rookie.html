@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="Fotos/Happy_emoticon.webp">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="mapa.js"></script>
+    <script src="mapaPersonagens.js"></script>
+    <script src="cadastro.js"></script>
+    <title>Rookie</title>
+</head>
+<body>
+    <section class="blog">
+        <div class="elementos-principais">
+            <img class="aba-pinguim" src="Fotos/Mascots.png" alt="">
+            <div class="corpo">
+                <div class="topo-corpo">
+                    <div>
+                        <img id="logo" src="Fotos/LOGO.png" alt="">
+                    </div>
+                    <div class="titulo">
+                        <h2>Pinguinando</h2>
+                    </div>
+                </div>
+                <div class="subtitulo">
+                    <h2>Personagens</h2>
+                </div>
+                <div class="infos">
+                    <div id="rock">
+                        <img class="imagem-personagens" src="Fotos/Rookie2014.webp">
+                        <div id="infos-personagens">
+                            <h2 class="titulo-personagem">Rookie</h2>
+                            <p class="texto">
+                                "Alguém viu minha pedra de estimação? Me avise se a encontrar! Obrigado!” Em português conhecido como “Novato”, Rookie é um dos primeiros personagens com quem você se identifica. Descrito como um personagem bobo, de inteligência fraca, mas, no geral, um cara legal. Novato é um agente estagiário da EPF que costuma cometer pequenos erros muito custosos, como é visto na missão “Caso das Moedas Desaparecidas”. Sua primeira aparição foi em 2007, mas Rookie só veio a se tornar um mascote oficial em 2011, quando ganhou o cargo de mascote de festas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="penguinpicture"></div>
+        <div onclick="abrirMapa()" class="mapa">
+            <div class="mapinha"></div>
+        </div>
+        <img onclick="voltar()" class="seta" src="Fotos/SETAamarela.png">
+        <div id="blogId"></div>
+        <div onclick="abrirtelefone()" class="telefone">
+            <div class="telefoninho"></div>
+        </div>
+        <div id="blogCelular"></div>
+        <div id="blogLogin"></div>
+        <div id="msg_erro"></div>
+    </section>
+    <div id="EXIBIRTOAST"></div>
+    <audio id="backgroundMusic" src="audios/King of Kingston - Coffee Shop ｜ Club Penguin OST.mp3" autoplay loop muted ></audio>
+</body>
+</html>
+
+<script src="sons.js"></script>
