@@ -1,0 +1,120 @@
+@font-face {
+    font-family: ClubPenguin;
+    src: url("Fontes/bumbastika.regular.ttf");
+}
+
+@font-face {
+    font-family: Burbankbig;
+    src: url("Fontes/BurbankBigCondensed/burbankbigcondensed_black.ttf");
+}
+
+@font-face {
+    font-family: ACME;
+    src: url("Fontes/ClubPenguinFonts/A.C.M.E.\ Secret\ Agent\ Bold.ttf");
+}
+
+@font-face {
+    font-family: BarnetSans;
+    src: url("Fontes/BarnetSans-Regular.otf");
+}
+
+@font-face {
+    font-family: squares;
+    src: url("Fontes/Square.ttf");
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h5 {
+    margin: 0;
+}
+
+.pagina-inteira {
+    width: 100vw;
+    height: 100vh;
+    background-color: #b8ac86;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fundo-branco {
+    width: 1200px;
+    height: 800px;
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+}
+
+#esquerda, #direita {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#topo {
+    display: flex;
+    gap: 10px;
+}
+
+#logo-card {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+button {
+    font-family: ACME;
+    font-size: 18px;
+    min-height: 70px;
+    width: 280px;
+    border-radius: 15px;
+    border: 4px outset #b8ac86;
+    color: #888064;
+    background-color: #dfd3ac;
+}
+
+button:hover {
+    scale: 0.965;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: Burbankbig;
+    color: #b8ac86;
+}
+
+input {
+    border: 4px solid #b8ac86;
+    background-color: #e2dcc6;
+    border-radius: 20px;
+    height: 50px;
+    width: 250px;
+    font-size: 20px;
+    font-family: BarnetSans;
+}
+
+#baixo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#tit-cadastro {
+    color: #888064;
+}
+
+#tit-cadastro:hover {
+    cursor: pointer;
+}
+
+#tit-login:hover {
+    cursor: pointer;
+}

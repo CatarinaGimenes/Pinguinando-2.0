@@ -17,6 +17,7 @@ var app = express();
 
 var indexRouter = require("./src/routes/index");
 var pinguimRouter = require("./src/routes/pinguim");
+var cardjitsuRouter = require("./src/routes/cardjitsu");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -26,6 +27,7 @@ app.use(cors());
 
 app.use("/", indexRouter);
 app.use("/pinguim", pinguimRouter);
+app.use("/cardjitsu", cardjitsuRouter);
 
 app.listen(PORTA_APP, function () {
     console.log(`http://${HOST_APP}:${PORTA_APP}`);
