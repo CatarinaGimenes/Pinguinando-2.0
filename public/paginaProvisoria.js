@@ -23,6 +23,7 @@ function cadastrar() {
                 console.log(resposta2)
 
                 if (resposta2.length > 0) {
+                    toast("Já existe um usuário com esse nome")
                     return
                 }
 
@@ -37,6 +38,7 @@ function cadastrar() {
                     }),
                 })
                     .then(function (resposta) {
+                        toast("Cadastro realizado com sucesso")
                         console.log("resposta: ", resposta);
                     })
                     .catch(function (resposta) {
@@ -70,10 +72,12 @@ function logar() {
                 resposta.json().then((resposta2) => {
                     console.log(resposta2)
                     if (resposta2.length == 0) {
+                        toast("Ops, usuário não encontrado :(")
                         return
                     }
                     localStorage.idJogador = resposta2[0].idJogador
                     localStorage.nome = resposta2[0].nome
+                    toast("Login realizado com sucesso!")
                     
                 })
             })

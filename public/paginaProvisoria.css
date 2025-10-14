@@ -118,3 +118,39 @@ input {
 #tit-login:hover {
     cursor: pointer;
 }
+
+#fundo-toasts {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.23);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+}
+
+.toast {
+    width: 700px;
+    height: 400px;
+    background-color: #b8ac86;
+    border: 4px solid #888064;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.toast h1 {
+    color: white;
+    max-width: 300px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.toast button {
+    border: solid;
+}

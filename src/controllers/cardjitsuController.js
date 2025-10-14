@@ -26,8 +26,36 @@ function logar(req, res) {
 	});
 }
 
+function procurarSala(req, res) {
+
+	cardjitsuModel.procurarSala().then((resultado) => {
+		res.status(201).json(resultado);
+	});
+}
+
+function inserirP2(req, res) {
+    var player2 = req.body.player2;
+    var idSala = req.body.idSala;
+
+    cardjitsuModel.inserirP2(player2, idSala).then((resultado) => {
+            res.status(201).json(resultado);
+    });
+}
+
+function criarSala(req, res) {
+    var codigo = req.body.codigo;
+    var idJogador = req.body.idJogador;
+
+    cardjitsuModel.criarSala(codigo, idJogador).then((resultado) => {
+            res.status(201).json(resultado);
+    });
+}
+
 module.exports = {
 	cadastrar,
     validar,
     logar,
+	procurarSala,
+	inserirP2,
+	criarSala,
 };
